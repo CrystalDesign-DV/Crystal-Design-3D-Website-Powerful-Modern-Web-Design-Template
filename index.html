@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRYSTAL DESIGN – طراحی وب‌سایت‌های قدرتمند</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Three.js & Extras -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://unpkg.com/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="theme-dark">
+
+  <div class="page-loader">
+    <div class="loader-orb"></div>
+    <p>در حال آماده‌سازی تجربه دیجیتال کریستال...</p>
+  </div>
+
+  <div class="bg-grid"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <div class="brand">
+        <span class="brand-icon">◆</span>
+        <div class="brand-text">
+          <div class="brand-title">CRYSTAL<span>DESIGN</span></div>
+          <div class="brand-sub">POWERFUL WEB SOLUTIONS</div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#hero">خانه</a>
+      <a href="#features">خدمات</a>
+      <a href="#showcase">نمونه‌کارها</a>
+      <a href="#pricing">پلن‌ها</a>
+      <a href="#contact">تماس</a>
+    </nav>
+
+    <div class="header-right">
+      <button class="btn-ghost small" id="toggleTheme">روز / شب</button>
+      <button class="btn-primary small">شروع همکاری</button>
+      <button class="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-layout">
+      <div class="hero-main">
+        <h1 class="hero-title">
+          طراحی و ساخت<br />
+          <span>وب‌سایت‌های قدرتمند و مدرن</span>
+        </h1>
+        <p class="hero-subtitle">
+          کریستال دیزاین یک استودیو تخصصی در طراحی و توسعه وب‌سایت‌های حرفه‌ای، سه‌بعدی و آینده‌محور است.
+          ما وب‌سایت‌هایی می‌سازیم که فقط زیبا نیستند، بلکه **قدرت فروش، برندینگ و اعتمادسازی** دارند.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn-primary large">ثبت سفارش طراحی سایت</button>
+          <button class="btn-ghost large">مشاهده نمونه‌کارها</button>
+        </div>
+
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-label">تکنولوژی</span>
+            <span class="meta-value">WebGL / Three.js</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">طراحی</span>
+            <span class="meta-value">Modern & Luxury</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">کارایی</span>
+            <span class="meta-value">سریع، امن، مقیاس‌پذیر</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-3d-wrapper">
+          <canvas id="heroScene"></canvas>
+          <div class="hero-3d-overlay">
+            <div class="stat-chip">
+              <span>Performance</span>
+              <strong>Ultra</strong>
+            </div>
+            <div class="stat-chip">
+              <span>Quality</span>
+              <strong>Premium</strong>
+            </div>
+            <div class="floating-tag">CRYSTAL POWER</div>
+          </div>
+        </div>
+
+        <div class="hero-panels">
+          <div class="panel-card tilt">
+            <h3>طراحی اختصاصی</h3>
+            <p>هر وب‌سایت از صفر و دقیقاً متناسب با برند و هدف کسب‌وکار شما طراحی می‌شود.</p>
+          </div>
+          <div class="panel-card tilt">
+            <h3>قدرت فنی بالا</h3>
+            <p>کدنویسی تمیز، بهینه و قابل توسعه برای رشد بلندمدت پروژه.</p>
+          </div>
+          <div class="panel-card tilt">
+            <h3>تجربه کاربری حرفه‌ای</h3>
+            <p>طراحی UI/UX هدفمند برای افزایش نرخ تبدیل و تعامل کاربران.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section features">
+    <div class="section-header">
+      <h2>قدرت‌های کریستال دیزاین</h2>
+      <p>چرا برندها برای طراحی وب‌سایت حرفه‌ای سراغ ما می‌آیند؟</p>
+    </div>
+
+    <div class="features-grid">
+      <article class="feature-card deep">
+        <div class="feature-icon">⚡</div>
+        <h3>سرعت و بهینه‌سازی بالا</h3>
+        <p>وب‌سایت‌هایی سریع، سبک و بهینه‌شده برای موتورهای جستجو.</p>
+        <ul class="feature-list">
+          <li>Core Web Vitals عالی</li>
+          <li>لود سریع صفحات</li>
+          <li>بهینه‌سازی سئو تکنیکال</li>
+        </ul>
+      </article>
+
+      <article class="feature-card deep">
+        <div class="feature-icon">🧊</div>
+        <h3>طراحی سه‌بعدی و مدرن</h3>
+        <p>استفاده از المان‌های 3D برای ایجاد تجربه‌ای متفاوت و ماندگار.</p>
+        <ul class="feature-list">
+          <li>Three.js و WebGL</li>
+          <li>انیمیشن‌های تعاملی</li>
+          <li>طراحی آینده‌نگر</li>
+        </ul>
+      </article>
+
+      <article class="feature-card deep">
+        <div class="feature-icon">📱</div>
+        <h3>ریسپانسیو واقعی</h3>
+        <p>نمایش بی‌نقص در موبایل، تبلت و دسکتاپ.</p>
+        <ul class="feature-list">
+          <li>Mobile First</li>
+          <li>تجربه کاربری روان</li>
+          <li>طراحی تطبیق‌پذیر</li>
+        </ul>
+      </article>
+
+      <article class="feature-card deep">
+        <div class="feature-icon">🎨</div>
+        <h3>هویت بصری قدرتمند</h3>
+        <p>هماهنگی کامل رنگ، تایپوگرافی و طراحی با برند شما.</p>
+        <ul class="feature-list">
+          <li>طراحی برندمحور</li>
+          <li>تم تیره و روشن</li>
+          <li>جذابیت بصری بالا</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section id="showcase" class="section showcase">
+    <div class="section-header">
+      <h2>نمونه‌کارهای کریستال دیزاین</h2>
+      <p>پروژه‌هایی که قدرت طراحی ما را نشان می‌دهند.</p>
+    </div>
+
+    <div class="showcase-layout">
+      <div class="showcase-list">
+        <article class="showcase-card tilt">
+          <div class="showcase-label">BUSINESS</div>
+          <h3>وب‌سایت شرکتی حرفه‌ای</h3>
+          <p>طراحی رسمی، قدرتمند و اعتمادساز.</p>
+        </article>
+
+        <article class="showcase-card tilt">
+          <div class="showcase-label">CREATIVE</div>
+          <h3>استودیو خلاق</h3>
+          <p>ترکیب هنر، تکنولوژی و تجربه کاربری.</p>
+        </article>
+
+        <article class="showcase-card tilt">
+          <div class="showcase-label">STARTUP</div>
+          <h3>لندینگ استارتاپی</h3>
+          <p>تمرکز بر جذب کاربر و افزایش نرخ تبدیل.</p>
+        </article>
+      </div>
+
+      <div class="showcase-3d">
+        <canvas id="galleryScene"></canvas>
+        <div class="showcase-3d-info">
+          <h3>قدرت نمایش سه‌بعدی</h3>
+          <p>نمایش پروژه‌ها به شکلی متفاوت، مدرن و تاثیرگذار.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section pricing">
+    <div class="section-header">
+      <h2>پلن‌های طراحی وب‌سایت</h2>
+      <p>متناسب با نیاز کسب‌وکار شما.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <article class="pricing-card">
+        <h3>پلن پایه</h3>
+        <p>مناسب کسب‌وکارهای کوچک.</p>
+        <div class="price">شروع از 299$</div>
+        <button class="btn-primary full">مشاوره</button>
+      </article>
+
+      <article class="pricing-card featured">
+        <h3>پلن حرفه‌ای</h3>
+        <p>بهترین انتخاب برای برندهای جدی.</p>
+        <div class="price">شروع از 699$</div>
+        <button class="btn-primary full">محبوب‌ترین پلن</button>
+      </article>
+
+      <article class="pricing-card">
+        <h3>پلن اختصاصی</h3>
+        <p>طراحی کاملاً سفارشی و خاص.</p>
+        <div class="price">قیمت‌گذاری توافقی</div>
+        <button class="btn-outline full">تماس با ما</button>
+      </article>
+    </div>
+  </section>
+
+
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section-header">
+      <h2>در تماس باش</h2>
+      <p>این بخش رو می‌تونی به فرم واقعی، سیستم تیکت یا هر سرویس دیگه وصل کنی.</p>
+    </div>
+
+    <div class="contact-layout">
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="نام کامل" />
+          <input type="email" placeholder="ایمیل" />
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="موضوع" />
+        </div>
+        <div class="form-row">
+          <textarea rows="4" placeholder="پیام خود را بنویسید..."></textarea>
+        </div>
+        <div class="form-actions">
+          <button class="btn-primary large">ارسال پیام</button>
+          <span class="form-note">پاسخ در کمتر از ۲۴ ساعت (دمو)</span>
+        </div>
+      </form>
+
+      <div class="contact-side">
+        <div class="contact-card">
+          <h3>آماده برندسازی هستی؟</h3>
+          <p>این قالب پایه، می‌تونه به ده‌ها نسخه مختلف تبدیل بشه که هر کدوم رو جدا بفروشی.</p>
+          <ul class="contact-list">
+            <li>نسخه گیمینگ</li>
+            <li>نسخه استودیو خلاق</li>
+            <li>نسخه SaaS / پنل</li>
+            <li>نسخه لندینگ تک‌صفحه‌ای</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="brand-footer">NOVA3D</div>
+        <p>قالب سه‌بعدی پریمیوم برای سازندگان جدی.</p>
+      </div>
+      <div class="footer-right">
+        <span>ساخته شده برای فروش در مارکت‌ها</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
