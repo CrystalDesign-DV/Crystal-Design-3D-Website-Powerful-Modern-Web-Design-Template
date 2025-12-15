@@ -26,3 +26,77 @@ https://discord.gg/mZsBwb5zSf
 
 🔹 Telegram Channel (Updates & Tutorials):
 https://t.me/CrystalDesign_DV
+
+
+# Crystal Design – Powerful 3D Website Template
+
+## فارسی 🇮🇷
+
+**Crystal Design** یک قالب مدرن و حرفه‌ای برای طراحی و ساخت وب‌سایت‌های قدرتمند است  
+که با استفاده از تکنولوژی‌های روز مثل **Three.js** و **GSAP** ساخته شده و تمرکز آن روی:
+
+- طراحی سه‌بعدی تعاملی
+- انیمیشن‌های نرم و حرفه‌ای
+- تجربه کاربری مدرن
+- ریسپانسیو واقعی (Mobile First)
+- مناسب برندها، استودیوهای خلاق و آژانس‌ها
+
+### ✨ ویژگی‌ها
+- صحنه‌های سه‌بعدی با WebGL
+- انیمیشن‌های اسکرول با GSAP & ScrollTrigger
+- طراحی مدرن و لوکس
+- پشتیبانی کامل از RTL (فارسی)
+- حالت تاریک و روشن
+- کدنویسی تمیز و قابل توسعه
+
+### 🛠 تکنولوژی‌ها
+- HTML5
+- CSS3 (Modern Layouts)
+- JavaScript (ES6+)
+- Three.js
+- GSAP
+
+### 📌 کاربردها
+- وب‌سایت شرکتی
+- وب‌سایت آژانس طراحی
+- لندینگ پیج حرفه‌ای
+- پورتفولیو خلاق
+- برندینگ دیجیتال
+
+---
+
+## English 🇺🇸
+
+**Crystal Design** is a powerful modern 3D website template built for high-end web projects.  
+It focuses on **performance, visual impact and user experience** using cutting-edge web technologies.
+
+### ✨ Features
+- Real-time 3D scenes using WebGL
+- Smooth scroll animations with GSAP & ScrollTrigger
+- Modern and luxury UI design
+- Fully responsive (Mobile First)
+- Dark / Light theme support
+- Clean and scalable code structure
+
+### 🛠 Tech Stack
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Three.js
+- GSAP
+
+### 📌 Use Cases
+- Agency websites
+- Creative studios
+- Business websites
+- Landing pages
+- Personal & team portfolios
+
+---
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/USERNAME/Crystal-Design-3D-Website.git
+cd Crystal-Design-3D-Website
+open index.html
